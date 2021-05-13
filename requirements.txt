@@ -1,5 +1,5 @@
 TgCrypto
-https://github.com/pyrogram/pyrogram/archive/asyncio.zip
+https://github.com/pyrogram/pyrogram/archive/asyncio
 git+https://github.com/ytdl-org/youtube-dl
 wget
 pillow
