@@ -6,6 +6,7 @@ async def start(client, message):
     # return
     joinButton = InlineKeyboardMarkup([
         [InlineKeyboardButton("Channel", url="https://t.me/TG_Free_bots")],
+        [InlineKeyboardButton("All our FREE BOTS", url="https://t.me/TG_Free_Bots/3")]
 
 
     ])
