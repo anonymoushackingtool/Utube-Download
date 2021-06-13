@@ -106,7 +106,7 @@ async def catch_youtube_dldata(c, q):
         med = InputMediaAudio(
             media=filename,
             thumb=thumb_image_path,
-            caption=os.path.basename(filename),
+            caption=os.path.basename(f"{filename}\n\nDownloaded by [@Utube_Downloadbot](tg://openmessage?user_id=1438811413)\nOther Useful BOTS: [@TG_Free_Bots](https://t.me/TG_Free_Bots/3)"),
             title=os.path.basename(filename)
         )
 
@@ -119,7 +119,7 @@ async def catch_youtube_dldata(c, q):
             width=width,
             height=height,
             thumb=thumb_image_path,
-            caption=os.path.basename(f"{filename}josjs"),
+            caption=os.path.basename(f"{filename}\n\nDownloaded by [@Utube_Downloadbot](tg://openmessage?user_id=1438811413)\nOther Useful BOTS: [@TG_Free_Bots](https://t.me/TG_Free_Bots/3)"),
             supports_streaming=True
         )
 
@@ -128,7 +128,7 @@ async def catch_youtube_dldata(c, q):
         med = InputMediaDocument(
             media=filename,
             thumb=thumb_image_path,
-            caption=os.path.basename(filename),
+            caption=os.path.basename(f"{filename}\n\nDownloaded by [@Utube_Downloadbot](tg://openmessage?user_id=1438811413)\nOther Useful BOTS: [@TG_Free_Bots](https://t.me/TG_Free_Bots/3)"),
         )
 
     if cb_data.startswith("docvideo"):
@@ -137,7 +137,7 @@ async def catch_youtube_dldata(c, q):
         med = InputMediaDocument(
             media=filename,
             thumb=thumb_image_path,
-            caption=os.path.basename(filename),
+            caption=os.path.basename(f"{filename}\n\nDownloaded by [@Utube_Downloadbot](tg://openmessage?user_id=1438811413)\nOther Useful BOTS: [@TG_Free_Bots](https://t.me/TG_Free_Bots/3)"),
         )
     if med:
         loop.create_task(send_file(c, q, med, filename))
