@@ -158,7 +158,7 @@ async def send_file(c, q, med, filename):
         await q.edit_message_text(e)
     finally:
         try:
-            os.remove({filename}f"hibusk")
+            os.remove(f"{filename}hibusk")
             os.remove(thumb_image_path)
         except:
             pass
