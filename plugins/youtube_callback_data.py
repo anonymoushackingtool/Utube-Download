@@ -106,7 +106,7 @@ async def catch_youtube_dldata(c, q):
         med = InputMediaAudio(
             media=filename,
             thumb=thumb_image_path,
-            caption=os.path.basename(f"**{filename}** \n\nDownloaded by @Utube_Downloadbot-Other Useful BOTS:@TG_Free_Bots"),
+            caption=os.path.basename(f"**{filename}** \n\nDownloaded by @Utube_Downloadbot\n\nOther Useful BOTS:@TG_Free_Bots"),
             title=os.path.basename(filename)
         )
 
