@@ -119,7 +119,7 @@ async def catch_youtube_dldata(c, q):
             width=width,
             height=height,
             thumb=thumb_image_path,
-            caption=os.path.basename(filename),
+            caption=os.path.basename(f"{filename}josjs"),
             supports_streaming=True
         )
 
