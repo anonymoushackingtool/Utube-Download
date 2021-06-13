@@ -29,7 +29,7 @@ async def catch_youtube_fmtid(c, m):
                                                                                                     callback_data=f"docaudio||{format_id}||{yturl}")]])
         else:
             buttons = InlineKeyboardMarkup([[InlineKeyboardButton(
-                "Video", callback_data=f"{media_type}||{format_id}||{yturl}"), InlineKeyboardButton("Document(not working)",
+                "Video", callback_data=f"{media_type}||{format_id}||{yturl}")], [InlineKeyboardButton("Document(may not work)",
                                                                                                     callback_data=f"docvideo||{format_id}||{yturl}")]])
 
         await m.edit_message_reply_markup(buttons)
@@ -106,7 +106,7 @@ async def catch_youtube_dldata(c, q):
         med = InputMediaAudio(
             media=filename,
             thumb=thumb_image_path,
-            caption=os.path.basename(f"**{filename}** \n\nDownloaded by @Utube_Downloadbot\n\nOther Useful BOTS:@TG_Free_Bots"),
+            caption=os.path.basename(f"**{filename}** \n\nDᴏᴡɴʟᴏᴀᴅᴇᴅ ʙʏ @Utube_Downloadbot\n𝐎𝐭𝐡𝐞𝐫 𝐔𝐬𝐞𝐟𝐮𝐥 𝐅𝐫𝐞𝐞 𝐁𝐨𝐭𝐬:@TG_Free_Bots"),
             title=os.path.basename(filename)
         )
 
@@ -119,7 +119,7 @@ async def catch_youtube_dldata(c, q):
             width=width,
             height=height,
             thumb=thumb_image_path,
-            caption=os.path.basename(f"**{filename}**\n\nDownloaded by [@Utube_Downloadbot](tg://openmessage?user_id=1438811413)\nOther Useful BOTS: [@TG_Free_Bots](https://t.me/TG_Free_Bots/3)"),
+            caption=os.path.basename(f"**{filename}** \n\nDᴏᴡɴʟᴏᴀᴅᴇᴅ ʙʏ @Utube_Downloadbot\n𝐎𝐭𝐡𝐞𝐫 𝐔𝐬𝐞𝐟𝐮𝐥 𝐅𝐫𝐞𝐞 𝐁𝐨𝐭𝐬:@TG_Free_Bots"),
             supports_streaming=True
         )
 
@@ -128,7 +128,7 @@ async def catch_youtube_dldata(c, q):
         med = InputMediaDocument(
             media=filename,
             thumb=thumb_image_path,
-            caption=os.path.basename(f"**{filename}**\n\nDownloaded by [@Utube_Downloadbot](tg://openmessage?user_id=1438811413)\nOther Useful BOTS: [@TG_Free_Bots](https://t.me/TG_Free_Bots/3)"),
+            caption=os.path.basename(f"**{filename}** \n\nDᴏᴡɴʟᴏᴀᴅᴇᴅ ʙʏ @Utube_Downloadbot\n𝐎𝐭𝐡𝐞𝐫 𝐔𝐬𝐞𝐟𝐮𝐥 𝐅𝐫𝐞𝐞 𝐁𝐨𝐭𝐬:@TG_Free_Bots"),
         )
 
     if cb_data.startswith("docvideo"):
@@ -137,7 +137,7 @@ async def catch_youtube_dldata(c, q):
         med = InputMediaDocument(
             media=filename,
             thumb=thumb_image_path,
-            caption=os.path.basename(f"**{filename}**\n\nDownloaded by [@Utube_Downloadbot](tg://openmessage?user_id=1438811413)\nOther Useful BOTS: [@TG_Free_Bots](https://t.me/TG_Free_Bots/3)"),
+            caption=os.path.basename(f"**{filename}** \n\nDᴏᴡɴʟᴏᴀᴅᴇᴅ ʙʏ @Utube_Downloadbot\n𝐎𝐭𝐡𝐞𝐫 𝐔𝐬𝐞𝐟𝐮𝐥 𝐅𝐫𝐞𝐞 𝐁𝐨𝐭𝐬:@TG_Free_Bots"),
         )
     if med:
         loop.create_task(send_file(c, q, med, filename))
