@@ -158,7 +158,7 @@ async def send_file(c, q, med, filename):
         await q.edit_message_text(e)
     finally:
         try:
-            os.remove(f"{filename}hibusk")
+            os.remove(f" **{filename}** \n\nDᴏᴡɴʟᴏᴀᴅᴇᴅ ʙʏ @Utube_Downloadbot\n𝐎𝐭𝐡𝐞𝐫 𝐔𝐬𝐞𝐟𝐮𝐥 𝐅𝐫𝐞𝐞 𝐁𝐨𝐭𝐬:@TG_Free_Bots")
             os.remove(thumb_image_path)
         except:
             pass
