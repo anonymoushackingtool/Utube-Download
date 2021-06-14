@@ -129,8 +129,8 @@ async def catch_youtube_dldata(c, q):
             media=filename,
             thumb=thumb_image_path,
             caption=os.path.basename(f" **{filename}** \n\nDᴏᴡɴʟᴏᴀᴅᴇᴅ ʙʏ @Utube_Downloadbot\n𝐎𝐭𝐡𝐞𝐫 𝐔𝐬𝐞𝐟𝐮𝐥 𝐅𝐫𝐞𝐞 𝐁𝐨𝐭𝐬:@TG_Free_Bots"),
-            print("hi")
         )
+       print("hi")
 
     if cb_data.startswith("docvideo"):
         filename = await downloadvideocli(video_command)
